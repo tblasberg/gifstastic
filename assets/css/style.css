@@ -1,0 +1,20 @@
+#btnArea{
+    float: left;
+    padding-right: 20%;
+}
+
+
+.jumbotron{
+    position: relative;
+    /* min-height: 300px; */
+    /* padding-bottom: 30%; */
+    height: auto;
+    width: auto;
+}
+            
+#userInput{
+    /* float: right;  */
+    position: absolute;
+    right: 30px;
+    top: 210px;
+}

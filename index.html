@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -12,15 +13,34 @@
 
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <!-- JS -->
-    <link rel="stylesheet" href="./assets/javascript/app.js">
+    <script src="./assets/javascript/app.js"></script>
 
-    <title>Gifstastic!</title>
+
+    <title>Gifstatic!</title>
 </head>
 <body>
+        <!-- create a jumbotron for the buttons (it'll be buttons area) -->
+
+    <div class="jumbotron">
+        <h1 class="display-4">Hello Gifstatic World!</h1>
+        <p class="lead">Have fun looking for gifs!</p>
+        <hr class="my-4">
+        <p>Use the search field to look for a topic that is not listed already!</p>
+        <div id="btnArea"> 
+        </div>
+            <div id="userInput">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="topic-input" aria-describedby="emailHelp" placeholder="next favorite gif here">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="add-topic">Go find it!</button>
+                    </form>
+            </div>
+    </div>
 
 
+    <!-- MAKE JUMBOTRON DYNAMIC WITH BUTTONS CREATION -->
     
 </body>
 </html>
