@@ -70,13 +70,20 @@ var results;
                     // paragraph tag for result's rating
                     var p = $("<p>").text("Rating: " + results[i].rating);
                     
-                    gifsImage = $("<img  class='gifs' data-still='results[i].image.original_still.url' data-animate='results[i].image.original.url' data-state='still' >");
+                    gifsImage = $("<img  class='gifs' data-state='still'>");
                     // it did not work
                     // $("<img>").addClass("gifs")
                     
                     console.log(gifsImage.attr("data-state"));
 
-                    gifsImage.attr("src", results[i].images.original_still.url);
+                    var gifStill = results[i].image.original_still.url; 
+                    
+                    var gifAnimated = results[i].image.original.url; 
+
+                    gifsImage.attr("data-still", gifStill);
+
+                    gifsImage.attr("data-animated", gifAnimated);
+
                     
                     // //figure it out how to empty the div before making another api call
                     // $("#for-gifs").empty();
@@ -101,10 +108,11 @@ var results;
 
         if (state === 'still'){
             thisGif.attr("data-state", "animate")
-            thisGif.attr("src", )
+            thisGif.attr("src", thisGif.attr("data-animate"))
 
         } else{
             thisGif.attr("data-state", "stil")
+            thisGif.attr("src", thisGif.attr("data-animate"))
         }
 
         
