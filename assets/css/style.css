@@ -3,6 +3,9 @@
     padding-right: 20%;
 }
 
+button{
+    margin: 7px;
+}
 
 .jumbotron{
     position: relative;

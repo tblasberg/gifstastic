@@ -18,7 +18,7 @@ $(document).ready(function(){
         topicsBtn.addClass("topics");
         topicsBtn.attr("data-name", element);
         topicsBtn.text(element);
-        $("#btnArea").append(topicsBtn).append(" ");
+        $("#btnArea").append(topicsBtn);
 
     })
 }
