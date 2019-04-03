@@ -69,6 +69,8 @@ var results;
                     
                     // paragraph tag for result's rating
                     var p = $("<p>").text("Rating: " + results[i].rating);
+
+                    var title = $("<p>").text("Gif title: " + results[i].title);
                     
                     gifsImage = $("<img>");
                     
@@ -87,7 +89,7 @@ var results;
                          
                     // //figure it out how to empty the div before making another api call
                     // $("#for-gifs").empty();
-                    gifsDiv.append(p);
+                    gifsDiv.append(p).append(title);
                     gifsDiv.append(gifsImage);
                     
                     $("#for-gifs").prepend(gifsDiv);

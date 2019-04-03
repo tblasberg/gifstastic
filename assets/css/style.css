@@ -13,14 +13,11 @@ button{
     /* padding-bottom: 30%; */
     height: auto;
     width: auto;
-    background-image: url("https://media.giphy.com/media/fxe4NnQh6aoMoh5p99/giphy.gif"); 
+    background-image: url("https://media.giphy.com/media/fxe4NnQh6aoMoh5p99/giphy.gif");  */
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
-jumbotron: ::before{ 
-    opacity: 0.2;
-}
             
 #userInput{
     /* float: right;  */

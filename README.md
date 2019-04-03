@@ -1,5 +1,5 @@
 # gifstastic
-Welcome to Gifstatic World! - Don't let the static (or the gifa) scare you!
+Welcome to Gifstatic World! - Don't let the static (or the gifs) scare you!
 
 Have fun using the web app searching for gifs!
 
